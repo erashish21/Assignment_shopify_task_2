@@ -1,0 +1,154 @@
+/* Reset some default styles */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header and navigation */
+.header {
+    background-color: #fff;
+    color: black;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 30px;
+    width: 60px;
+}
+.cart img{
+    height: 30px;
+    width: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f0f0f0;
+}
+
+/* Responsive menu */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu-icon.active .bar:first-child {
+        transform: rotate(-45deg) translate(-4px, 5px);
+    }
+
+    .menu-icon.active .bar:last-child {
+        transform: rotate(45deg) translate(-4px, -5px);
+    }
+
+    .menu-icon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+}
+
+/* Slider styles */
+.slider {
+    width: 100%;
+    height: 70vh;
+    /* Adjust the height as needed */
+    background-image: url('https://nack.life/cdn/shop/files/desktopbanner_1280x.jpg?v=1692342864');
+    background-size: cover;
+    background-position: center;
+    animation: slider 9s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url('https://nack.life/cdn/shop/files/Carousel_Web_Banner_img-01_1280x.jpg?v=1684483241');
+    }
+
+    35% {
+        background-image: url('https://nack.life/cdn/shop/files/Yoga_Day_Journal_Desktop_1280x.jpg?v=1689658304');
+    }
+
+    75% {
+        background-image: url('https://nack.life/cdn/shop/files/desktopbanner_1280x.jpg?v=1692342864');
+    }
+}
+
+/* Space and featured section styles */
+.space {
+    height: 30px;
+    width: 100%;
+    background-color: #20c997;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+/* slider */
+.nack-section-featured {
+   
+    margin-bottom: 16px;
+    font-family: GTSuperDisplay-Regular !important;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.carousel {
+    background: #FAFAFA;
+}
+
+.carousel-cell {
+    width: 28%;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+}
