@@ -25,8 +25,8 @@ ul {
     width: 60px;
 }
 .cart img{
-    height: 30px;
-    width: 60px;
+    height: 20px;
+    width: 50px;
 }
 
 .nav-links {
@@ -151,4 +151,102 @@ ul {
     border-radius: 5px;
     background-position: center center;
     background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column{
+    float: left;
+    width: 50%;
+    height: 500px;
+    margin-top: 100px;
+    background-color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: GTSuperDisplay-Regular !important;
+    
+    /* Should be removed. Only for demonstration */
+}
+
+ p {
+    padding: 70px 0;
+ }
+
+.row:after {
+    height: 200px;
+    width: 600px;
+    content: "";
+    display: table;
+    clear: both;
+}
+.column img{
+        width: 70%;
+        height: 600px;
+}
+/* Create two equal columns that floats next to each other - 2  */
+.column-1 {
+    margin-top: 100px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: GTSuperDisplay-Regular !important;
+    /* Should be removed. Only for demonstration */
+}
+/* fullwidthonmobile */
+.fullwidthonmobile{
+    height: 300px;
+        width: auto;
+}
+/* Clear floats after the columns */
+.row-1:after {
+    height: 200px;
+    width: 600px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column-2 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+.column-2 img{
+    height: 300px;
+    width: 450px;
+}
+/* Clear floats after the columns */
+.row-3{
+    background-color: #f9f6ef;
+    
+}
+.row-3:after {
+    height: 400px;
+    width: 100%;
+    content: "";
+    display: table;
+    clear: both;
+    display: block;
+    
+}
+.tag{
+    color:#000000 !important;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 15px !important;
+    letter-spacing: -0.04px;
+     text-decoration: underline;
+    
 }
