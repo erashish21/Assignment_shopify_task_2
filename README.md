@@ -44,4 +44,4 @@ If you'd like to contribute to this project, feel free to fork the repository, m
 
 
 
-For more information about Näck and their products, visit [Näck Website](https://nack.life/).
+For more information about Näck and their products, visit https://nack.life/](https://stalwart-rugelach-96dd3e.netlify.app/)https://stalwart-rugelach-96dd3e.netlify.app/).
