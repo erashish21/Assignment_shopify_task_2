@@ -1,252 +1,312 @@
 /* Reset some default styles */
 body,
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Style the header and navigation */
 .header {
-    background-color: #fff;
-    color: black;
-    padding: 10px 0;
+  background-color: #fff;
+  color: black;
+  padding: 10px 0;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo img {
-    height: 30px;
-    width: 60px;
+  height: 30px;
+  width: 60px;
 }
-.cart img{
-    height: 20px;
-    width: 50px;
+.cart img {
+  height: 20px;
+  width: 50px;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-links li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #f0f0f0;
+  color: #f0f0f0;
 }
 
 /* Responsive menu */
 .menu-icon {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .bar {
-    background-color: black;
-    height: 3px;
-    width: 25px;
-    margin: 3px 0;
-    transition: transform 0.3s, opacity 0.3s;
+  background-color: black;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: transform 0.3s, opacity 0.3s;
 }
 
 /* Media query for responsive design */
 @media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        text-align: center;
-        z-index: 1;
-    }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+  }
 
-    .nav-links.active {
-        display: flex;
-    }
+  .nav-links.active {
+    display: flex;
+  }
 
-    .menu-icon {
-        display: flex;
-    }
+  .menu-icon {
+    display: flex;
+  }
 
-    .menu-icon.active .bar:first-child {
-        transform: rotate(-45deg) translate(-4px, 5px);
-    }
+  .menu-icon.active .bar:first-child {
+    transform: rotate(-45deg) translate(-4px, 5px);
+  }
 
-    .menu-icon.active .bar:last-child {
-        transform: rotate(45deg) translate(-4px, -5px);
-    }
+  .menu-icon.active .bar:last-child {
+    transform: rotate(45deg) translate(-4px, -5px);
+  }
 
-    .menu-icon.active .bar:nth-child(2) {
-        opacity: 0;
-    }
+  .menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 }
 
 /* Slider styles */
 .slider {
-    width: 100%;
-    height: 70vh;
-    /* Adjust the height as needed */
-    background-image: url('https://nack.life/cdn/shop/files/desktopbanner_1280x.jpg?v=1692342864');
-    background-size: cover;
-    background-position: center;
-    animation: slider 9s infinite linear;
+  width: 100%;
+  height: 70vh;
+  /* Adjust the height as needed */
+  background-image: url("https://nack.life/cdn/shop/files/desktopbanner_1280x.jpg?v=1692342864");
+  background-size: cover;
+  background-position: center;
+  animation: slider 9s infinite linear;
 }
 
 @keyframes slider {
-    0% {
-        background-image: url('https://nack.life/cdn/shop/files/Carousel_Web_Banner_img-01_1280x.jpg?v=1684483241');
-    }
+  0% {
+    background-image: url("https://nack.life/cdn/shop/files/Carousel_Web_Banner_img-01_1280x.jpg?v=1684483241");
+  }
 
-    35% {
-        background-image: url('https://nack.life/cdn/shop/files/Yoga_Day_Journal_Desktop_1280x.jpg?v=1689658304');
-    }
+  35% {
+    background-image: url("https://nack.life/cdn/shop/files/Yoga_Day_Journal_Desktop_1280x.jpg?v=1689658304");
+  }
 
-    75% {
-        background-image: url('https://nack.life/cdn/shop/files/desktopbanner_1280x.jpg?v=1692342864');
-    }
+  75% {
+    background-image: url("https://nack.life/cdn/shop/files/desktopbanner_1280x.jpg?v=1692342864");
+  }
 }
 
 /* Space and featured section styles */
 .space {
-    height: 30px;
-    width: 100%;
-    background-color: #20c997;
-    color: white;
-    text-align: center;
-    font-size: 0.8rem;
+  height: 30px;
+  width: 100%;
+  background-color: #20c997;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
 }
 /* slider */
 .nack-section-featured {
-   
-    margin-bottom: 16px;
-    font-family: GTSuperDisplay-Regular !important;
-    text-align: center;
-    line-height: 1.5rem;
+  margin-bottom: 16px;
+  font-family: GTSuperDisplay-Regular !important;
+  text-align: center;
+  line-height: 1.5rem;
 }
 .carousel {
-    background: #FAFAFA;
+  background: #fafafa;
 }
 
 .carousel-cell {
-    width: 28%;
-    height: 300px;
-    margin-right: 10px;
-    border-radius: 5px;
-    background-position: center center;
-    background-size: cover;
+  width: 28%;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-position: center center;
+  background-size: cover;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* Create two equal columns that floats next to each other */
-.column{
-    float: left;
-    width: 50%;
-    height: 500px;
-    margin-top: 100px;
-    background-color: white;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: GTSuperDisplay-Regular !important;
-    
-    /* Should be removed. Only for demonstration */
+.column {
+  float: left;
+  width: 50%;
+  height: 400px;
+  margin-top: 100px;
+  background-color: white;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: GTSuperDisplay-Regular !important;
+
+  /* Should be removed. Only for demonstration */
 }
 
- p {
-    padding: 70px 0;
- }
+p {
+  padding: 70px 0;
+}
 
 .row:after {
-    height: 200px;
-    width: 600px;
-    content: "";
-    display: table;
-    clear: both;
+  height: 200px;
+  width: 600px;
+  content: "";
+  display: table;
+  clear: both;
 }
-.column img{
-        width: 70%;
-        height: 600px;
+.column img {
+  width: 50%;
+  height: 500px;
 }
 /* Create two equal columns that floats next to each other - 2  */
 .column-1 {
-    margin-top: 100px;
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
-    text-align: center;
-    text-transform: capitalize;
-    font-family: GTSuperDisplay-Regular !important;
-    /* Should be removed. Only for demonstration */
+  margin-top: 100px;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: GTSuperDisplay-Regular !important;
+  /* Should be removed. Only for demonstration */
 }
 /* fullwidthonmobile */
-.fullwidthonmobile{
-    height: 300px;
-        width: auto;
+.fullwidthonmobile {
+  height: 300px;
+  width: auto;
 }
 /* Clear floats after the columns */
 .row-1:after {
-    height: 200px;
-    width: 600px;
-    content: "";
-    display: table;
-    clear: both;
+  height: 200px;
+  width: 600px;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Create three equal columns that floats next to each other */
 .column-2 {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
 }
-.column-2 img{
-    height: 300px;
-    width: 450px;
+.column-2 img {
+  height: 300px;
+  width: 450px;
 }
 /* Clear floats after the columns */
-.row-3{
-    background-color: #f9f6ef;
-    
+.row-3 {
+  background-color: #f9f6ef;
+  justify-content: center;
 }
 .row-3:after {
-    height: 400px;
-    width: 100%;
-    content: "";
-    display: table;
-    clear: both;
-    display: block;
-    
+  height: 400px;
+  width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  display: block;
 }
-.tag{
-    color:#000000 !important;
-    text-transform: capitalize;
-    font-weight: 500;
-    font-size: 15px !important;
-    letter-spacing: -0.04px;
-     text-decoration: underline;
-    
+.tag {
+  color: #000000 !important;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 15px !important;
+  letter-spacing: -0.04px;
+  text-decoration: underline;
+}
+.l1 {
+  color: #000000;
+}
+
+/* footer */
+.column4 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 450px;
+}
+
+/* Clear floats after the columns */
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row4 {
+  background-color: #000000;
+}
+
+.footer-block1 img {
+  height: 30px;
+  width: 80px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.footer-block1 i {
+  margin-left: 40px;
+}
+
+.footer-block2 {
+  margin-top: 20px;
+  word-spacing: 15px;
+  line-height: 20px;
+}
+
+.link {
+  color: white;
+}
+
+.field input {
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  padding: 15px;
+  box-shadow: none;
+  width: 80%;
+  margin-bottom: 7px;
+  font-family: 'GTSuperDisplay-Regular';
+}
+
+.btn {
+  background-color: #face93;
+  border: 1px solid #fff;
+  height: 50px;
+  color: #000;
+  text-align: center;
+  width: 80%;
 }
